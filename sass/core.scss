@@ -1,0 +1,14 @@
+
+/* ==========================================================================
+   Core styles: 
+   ========================================================================== */
+
+
+@import "partials/_common.scss";
+
+@import "partials/_base.scss";
+
+
+@media only screen and (min-width:481px){
+  @import "partials/_min481.scss";
+}
