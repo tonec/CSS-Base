@@ -3,7 +3,7 @@
    Desktop only
    ========================================================================== */
 
-@import "partials/_all";
+@import "components/__all";
 
 @include core-layout_min600;
 @include core-layout_min751;

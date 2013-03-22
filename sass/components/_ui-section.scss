@@ -1,0 +1,135 @@
+
+/* ==========================================================================
+   Pod
+   ========================================================================== */
+
+/* Use:
+		<div class="pod">
+			<div class="pob-inner">
+				<!-- content -->
+			</div>
+		</div>
+   -------------------------------------------------------------------------- */
+.pod { 
+	display: block;
+	background-color: #c8c8c8;
+	padding-bottom: 4px;
+	margin-bottom: 1.5em;
+	border: 1px solid #c8c8c8; 
+	@include border-radius( 4px );
+	@include box-sizing( border-box );
+}
+.pod-inner {
+	display: block;
+	background-color: #fff;
+	padding: 1.5em;
+	padding-bottom: 1px;
+	@include border-radius( 4px );
+	@include box-sizing( border-box );
+	_zoom: 1;
+}
+.pod.fm > .pod-inner {
+	padding: 0 0 1px;
+}
+.pod.fm > .pod-inner .inner-wrap {
+	padding: 1.5em 1.5em 0;
+}
+
+
+/* Pod with black background
+   Add .pod-dk
+   -------------------------------------------------------------------------- */
+.pod.pod-dk {
+	background-color: #000;
+	border: 1px solid #000;
+}
+.pod.pod-dk .pod-inner {
+	background-color: #2e2e2e;
+	color: #fff;
+}
+.pod.pod-dk .pod-inner h2,
+.pod.pod-dk .pod-inner h3,
+.pod.pod-dk .pod-inner h4,
+.pod.pod-dk .pod-inner h5,
+.pod.pod-dk .pod-inner h6 {
+	color: #fff;
+}
+
+.pod.pod-dk.dk-inside {
+	@include box-shadow( 0 -4px 0 #212121 );
+}
+.pod.pod-dk.dk-inside .pod-inner {
+	background-color: #1e1e1e;
+}
+
+/* Pod Grey */
+.pod.pod-gry .pod-inner {
+	background-color: #F0F0F0;
+}
+
+
+/* ==========================================================================
+   Search Box
+   ========================================================================== */
+
+.search-box {
+	padding-right: 45px;
+	margin: 0 auto;
+}
+.search-box .form-field {
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	@include border-radius( 4px 0 0 4px );
+}
+.search-box .text-field-wrap {
+	width: 100%;
+	@include border-radius( 4px 0 0 4px );
+}
+.search-box .text-field-wrap p {
+	padding: 0 0 0 12px;
+}
+.search-box input[type="search"] {
+	width: 100%;
+	padding: 12px 0 12px;
+}
+.search-box .btn {
+	position: relative;
+	width: 45px;
+	margin-right: -48px;
+	padding-bottom: 2px;
+	border: 1px solid #363636;
+	overflow: hidden;
+	@include border-radius( 0 4px 4px 0 );
+	@include box-shadow( inset 0 -4px 0 #363636 );
+}
+.search-box .btn:hover {
+	margin-top: 0;
+	@include box-shadow( inset 0 4px 0 #363636 );
+}
+.search-box .btn input[type="submit"] {
+	background: inline-image("../images/icon_search_white.png") no-repeat 50% 50%;
+	color: transparent;
+	text-indent: -9999em;
+	width: 100%;
+	height: 100%;
+	padding: 10px 1em;
+	filter: none;
+	@include border-radius( 0 4px 4px 0 );
+}
+.search-box .btn:hover input[type="submit"] {
+	background-position: 50% 60%;
+}
+
+/* IE8 and lower
+   -------------------------------------------------------------------------- */
+.lt-ie8 .search-box .btn {
+	height:3.9em;
+}
+.lt-ie8 .search-box .btn input[type="submit"] {
+	position: absolute;
+	top: 0;
+	left: 4px;
+}
+
