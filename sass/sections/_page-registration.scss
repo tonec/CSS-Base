@@ -1,0 +1,73 @@
+
+/* ==========================================================================
+   PAGE - Fundraiser Landing - /registration
+   ========================================================================== */
+
+.page-fundraiser-landing .article {margin:1.5em; @include border-radius(4px);}
+.page-fundraiser-landing .article .img {width:100%; height:70px; margin:0 auto; background:transparent url(../images/content/registration/landing/noses_mobile.png) no-repeat 50% 0; position:absolute; left:0;}
+.page-fundraiser-landing .article .img {display:none;}
+
+.page-fundraiser-landing .articles-area-inner {padding-bottom:1px; background-color:#fff;}
+.page-fundraiser-landing .articles-area h2 {padding:0.6em 0.615em 0.6em; margin:0; -webkit-border-radius:4px 4px 0 0; -moz-border-radius:4px 4px 0 0; border-radius:4px 4px 0 0;}
+.page-fundraiser-landing .articles-area .article {position:relative;}
+.page-fundraiser-landing .articles-area .article h2 {padding:0; margin-bottom:0.5em; background-color:transparent; background-image:none; filter:none;}
+
+
+.page-fundraiser-landing .pod-age .form-field {overflow:hidden; margin:0 auto 1.5em; padding:0; border:1px solid #c8c8c8; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; box-shadow: 0 4px 0 #E7E7E7 inset;}
+.page-fundraiser-landing .pod-age .form-field p {margin:0; line-height:2.7em; padding:0 1em; -moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
+.page-fundraiser-landing .pod-age .form-field p:first-child {border-bottom:1px solid #c8c8c8;}
+.page-fundraiser-landing .pod-age .form-field p label {cursor:pointer;}
+.page-fundraiser-landing #fund-options.inactive { position:relative; z-index:10;}
+
+#editable-inline-bodyhtml a { text-decoration : none; font-weight: bold; color: #000; display:block; padding-top: 8px; }
+#editable-inline-bodyhtml a span { text-decoration : none; padding-right: 10px;  }
+#editable-inline-bodyhtml a span.plus-sign { background:transparent url(../images/ui/low/icon_red_plus.gif) no-repeat 50% }
+#editable-inline-bodyhtml a span.minus-sign { background:transparent url(../images/ui/low/icon_red_minus.gif) no-repeat 50% }
+
+
+/* IE8 and below */
+.lt-ie9 .page-fundraiser-landing .pod-age .form-field {width:33.5em}
+.lt-ie8 .page-fundraiser-landing .pod-age .form-field p {width:49.5%;}
+
+
+
+@mixin page-registration_min451 {
+
+	/* PAGE - Fundraiser Landing */
+	.main-site-nav .main-inner {padding-top:2em;}
+	.page-fundraiser-landing .articles-area {background-color:#c8c8c8; padding-bottom:4px; margin-bottom:2em; border:1px solid #c8c8c8; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+	.page-fundraiser-landing .articles-area-inner {background-color:#fff; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; position:relative;}
+
+	.page-fundraiser-landing .intro h1,
+	.page-fundraiser-landing .intro p {text-align:center;}
+	.page-fundraiser-landing .intro p {max-width:66em; margin:0 auto 1.5em;}
+	.page-fundraiser-landing h2 {text-align:center;}
+
+	.page-fundraiser-landing .pod-age .form-field {width:33em; margin-bottom:0.5em;}
+	.page-fundraiser-landing .pod-age h2 {margin-bottom:0.7em;}
+	.page-fundraiser-landing .pod-age {text-align:center;}
+	.page-fundraiser-landing .pod-age .form-field p {float:left; width:50%; padding:0;}
+	.page-fundraiser-landing .pod-age .form-field p:first-child {border-right:1px solid #c8c8c8; border-bottom:0;}
+
+	.page-fundraiser-landing .article {float:left; width:33.333%; text-align:center; padding:0; margin:0; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+	.page-fundraiser-landing.adult .article {width:33.333%;}
+	.page-fundraiser-landing.child .article {width:50%;}
+
+	.page-fundraiser-landing .article .article-inner {padding:2em 2em 0; border-left:1px dotted #c8c8c8; position:relative; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+	.page-fundraiser-landing .article-1 .article-inner {border:0;}
+	.page-fundraiser-landing .articles-area h2 {font-size:2.4em;}
+	.page-fundraiser-landing .articles-area .article h2 {font-size:2.6em;}
+
+	.page-fundraiser-landing .articles-area .article .img {display:block; position:absolute; width:100%; height:85px; bottom:30px; left:0; background:transparent url(../images/content/registration/landing/noses_4.png) no-repeat 50% 0;}
+
+	.page-fundraiser-landing .articles-area .article-1 .img {background-position:50% 0;}
+	.page-fundraiser-landing .articles-area .article-2 .img {background-position:50% -86px;}
+	.page-fundraiser-landing .articles-area .article-3 .img {background-position:50% -174px;}
+
+	.page-fundraiser-landing .article.pod {background:none; border:0; border-top:1px solid #c8c8c8;}
+
+
+	.lt-ie8 .page-fundraiser-landing .article {width:33%;}
+	.lt-ie8 .page-fundraiser-landing.adult .article {width:33%;}
+	.lt-ie8 .page-fundraiser-landing.child .article {width:49%;}
+}

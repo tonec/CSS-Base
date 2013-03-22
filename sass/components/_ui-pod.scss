@@ -1,0 +1,69 @@
+
+/* ==========================================================================
+   Pod
+   ========================================================================== */
+
+/* Use:
+        <div class="pod">
+            <div class="pob-inner">
+                <!-- content -->
+            </div>
+        </div>
+   -------------------------------------------------------------------------- */
+.pod { 
+    display: block;
+    background-color: #c8c8c8;
+    padding-bottom: 4px;
+    margin-bottom: 1.5em;
+    border: 1px solid #c8c8c8; 
+    @include border-radius( 4px );
+    @include box-sizing( border-box );
+}
+.pod-inner {
+    display: block;
+    background-color: #fff;
+    padding: 1.5em;
+    padding-bottom: 1px;
+    @include border-radius( 4px );
+    @include box-sizing( border-box );
+    _zoom: 1;
+}
+.pod.fm > .pod-inner {
+    padding: 0 0 1px;
+}
+.pod.fm > .pod-inner .inner-wrap {
+    padding: 1.5em 1.5em 0;
+}
+
+
+/* Pod with black background
+   Add .pod-dk
+   -------------------------------------------------------------------------- */
+.pod.pod-dk {
+    background-color: #000;
+    border: 1px solid #000;
+}
+.pod.pod-dk .pod-inner {
+    background-color: #2e2e2e;
+    color: #fff;
+}
+.pod.pod-dk .pod-inner h2,
+.pod.pod-dk .pod-inner h3,
+.pod.pod-dk .pod-inner h4,
+.pod.pod-dk .pod-inner h5,
+.pod.pod-dk .pod-inner h6 {
+    color: #fff;
+}
+
+.pod.pod-dk.dk-inside {
+    @include box-shadow( 0 -4px 0 #212121 );
+}
+.pod.pod-dk.dk-inside .pod-inner {
+    background-color: #1e1e1e;
+}
+
+/* Pod Grey */
+.pod.pod-gry .pod-inner {
+    background-color: #F0F0F0;
+}
+

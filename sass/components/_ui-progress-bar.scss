@@ -7,15 +7,15 @@
 .progress-bar .row {padding:0; border:0;}
 
 .progress-bar .cell.first {
-  -webkit-border-radius:4px 0 0 4px;
-  -moz-border-radius:4px 0 0 4px;
-  border-radius:4px 0 0 4px;
+    -webkit-border-radius:4px 0 0 4px;
+    -moz-border-radius:4px 0 0 4px;
+    border-radius:4px 0 0 4px;
 }
 .progress-bar .cell.last {
-  border-right: 1px solid #C8C8C8;
-  -webkit-border-radius:0 4px 4px 0;
-  -moz-border-radius:0 4px 4px 0;
-  border-radius:0 4px 4px 0;
+    border-right: 1px solid #C8C8C8;
+    -webkit-border-radius:0 4px 4px 0;
+    -moz-border-radius:0 4px 4px 0;
+    border-radius:0 4px 4px 0;
 }
 .progress-bar li a {display:block; text-align:center; font-size:1.307em; text-transform:uppercase; text-decoration:none; padding:0.2em 0.5em; font-weight:500;}
 

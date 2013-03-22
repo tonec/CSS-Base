@@ -1,26 +1,29 @@
 
 /* ==========================================================================
-   Gradients
-   ========================================================================== */
+     Gradients
+     ========================================================================== */
 
-.grad_red,
+/* Please don't use the gradient mixins in any other file to avoid css bloat.
+     You can either:
+        - use a grad-xxx class within the markup or
+        - add selectors here as needed.
+     -------------------------------------------------------------------------- */
+
+.grad-red,
 .btn span,
 .btn input[type=submit] {
 
-  @include linear-gradient( #f74d3e, #e34739 )
-
+    @include linear-gradient( #f74d3e, #e34739 )
 }
 
-.grad_lightgrey,
+.grad-lightgrey,
 .page-fundraiser-landing .articles-area h2 {
 
-  @include linear-gradient( #f0f0f0, #e0e0e0 )
-
+    @include linear-gradient( #f0f0f0, #e0e0e0 )
 }
 
-.grad_blue,
+.grad-blue,
 .btn.btn-blue input[type=submit] {
 
-  @include linear-gradient( #1faccc, #1c9bb8 )
-
+    @include linear-gradient( #1faccc, #1c9bb8 )
 }
