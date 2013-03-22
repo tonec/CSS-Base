@@ -1,3 +1,24 @@
 
+@import "compass/reset";
 
-@import "partials/_min481.scss";
+@import "partials/_base";
+@import "partials/_core-layout";
+@import "partials/_core-typography";
+@import "partials/_core-page";
+
+@import "partials/_ui-navigation";
+@import "partials/_ui-section";
+@import "partials/_ui-gradient";
+@import "partials/_ui-button";
+@import "partials/_ui-form";
+@import "partials/_ui-table";
+@import "partials/_ui-progress-bar";
+@import "partials/_ui-tabs";
+
+@import "partials/_page-registration";
+
+@include core-layout_min600;
+@include core-layout_min751;
+@include core-layout_min1000;
+
+@include core_typography_min481;

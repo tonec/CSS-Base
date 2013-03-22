@@ -1,22 +1,58 @@
 
 /* ==========================================================================
-   Core styles: 
+   Mobile, Tablet & Desktop
    ========================================================================== */
 
 @import "compass/reset";
 
 @import "partials/_base";
-@import "partials/_core";
+@import "partials/_core-layout";
+@import "partials/_core-typography";
+@import "partials/_core-page";
 
-@import "partials/_ui-gradients";
-@import "partials/_ui-buttons";
-@import "partials/_ui-forms";
+@import "partials/_ui-navigation";
+@import "partials/_ui-section";
+@import "partials/_ui-gradient";
+@import "partials/_ui-button";
+@import "partials/_ui-form";
+@import "partials/_ui-table";
+@import "partials/_ui-progress-bar";
+@import "partials/_ui-tabs";
 
 @import "partials/_page-registration";
 
+/* ==========================================================================
+   Tablet & Desktop
+   ========================================================================== */
 
-@media only screen and (min-width:481px){
+@media only screen and (min-width:481px) {
 
-  @import "partials/_media-min481";
+	@include core_typography_min481;
+
+}
+
+@media only screen and (min-width:600px) {
+
+	@include core-layout_min600
+
+}
+
+@media only screen and (min-width:751px) {
+
+	@include core-layout_min751
+
+}
+
+@media only screen and (min-width:825px) {
+
+}
+
+@media only screen and (min-width:850px) {
+
+}
+
+@media only screen and (min-width:1000px) {
+
+	@include core-layout_min1000;
 
 }

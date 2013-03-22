@@ -1,0 +1,81 @@
+
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.header-bg {padding-bottom:0.5em; background:transparent url(../images/ui/low/mob_bg.jpg) repeat-x 0 0;}
+.header .logo h3 {width:73px; height:67px; margin:0; float:left; font-size:2em; ;}
+
+ /* Header - Logo */
+.header {border-bottom:1px solid #c8c8c8;}
+.header-logo {float:left; width:154px; height:63px; margin-top:12px; margin-left:13px;}
+.header-logo h2 {width:154px; height:63px; border:0; font: 0/0 a; text-shadow: none; color: transparent; background-color: transparent;}
+.header-logo h2 span {display:block; width:154px; height:63px; background-image:url(/assets/layouts/RND13/images/ui/low/logo_rnd_header_mobile.png);}
+.header-logo h3 {display:none;}
+
+
+@media only screen and (-webkit-min-device-pixel-ratio:1.3),
+  only screen and (-o-min-device-pixel-ratio: 4/3),
+  only screen and (min--moz-device-pixel-ratio:1.3),
+  only screen and (device-pixel-ratio:1.3){
+    .header-logo h2 span {background-image:url(/assets/layouts/RND13/images/ui/high/logo_rnd_header_mobile_x2.png); -webkit-background-size:154px 63px; background-size:154px 63px;}
+}
+
+ /* Header - options */
+.header-options { border-bottom:3px solid #0a0a0a;}
+.header-options ul {float:left; margin:0;}
+.header-options ul li {margin:0; padding:0.65em 1em;}
+.header-options ul li a {color:#fff; text-decoration:none;}
+.header-options .header-search {display:none;}
+.header-options input {float:left;}
+
+/*
+ * Back to RND
+ */
+.back-to-rnd .pod {border:0; border-bottom:3px solid #0a0a0a; padding:0; margin:0;}
+.back-to-rnd .pod-inner {padding:0.85em 1em;}
+.back-to-rnd a {color:#fff; text-decoration:none; text-align:left;}
+
+/*
+ * Content
+ */
+.main {background-color:#fff;}
+.main-inner {padding:0; background-color:#fafafa;}
+
+.section-test-workflow .main-inner {padding:1em 0 0;}
+.section-test-workflow .intro h1 {margin-bottom:0.4em;}
+
+.sidebar h2 {text-align:center;}
+
+.copy-wrap {overflow:hidden; display:block;}
+.left {float:left;}
+
+.rnd-box {border:1px solid #e0e0e0; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+.rnd-box-dk {background-color:#fafafa;}
+
+.article {border-top:1px dotted #C8C8C8;}
+.article:first-child {border:0;}
+.article .article-inner {border-radius:4px; padding:1.5em;}
+
+.team-label {width:84px; height:68px; background:transparent url(../images/ui/low/team_label.png) no-repeat 0 0; position:absolute; top:0; left:0;}
+
+
+/*
+ * FOOTER
+ */
+
+.footer {background-color:#303030; padding:20px 24px 72px;}
+.footer a:link,
+.footer a:visited {color:#fff; text-decoration:none; border-bottom:1px solid #fff;}
+.footer ul {margin:0; font-size:0.9em;}
+.footer ul li {margin:0; list-style:none; font-size:1em; overflow:hidden;}
+.footer ul li ul {margin-right:2em;}
+.footer ul li ul li {font-size:1.3em; margin:0 0 0.3em;}
+
+.footer .nav-footer {display:none;}
+
+.footer .nav-footer-links {text-align:center;}
+.footer .nav-footer-links li {font-size:1.4em; display:inline; padding:0 0.3em;}
+.footer .nav-footer-links li a {line-height:1.8em;}
+
+.footer p {font-size:1.1em; color:#999; text-align:center; margin-top:1em;}

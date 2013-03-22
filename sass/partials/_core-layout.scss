@@ -1,0 +1,63 @@
+
+/*
+ * Layout
+ *
+ * Contains all layout styles which includes:
+ *
+ * * * * * * * * */
+
+/*.wrapper {width:320px;} */
+
+html, body {height:100%;}
+.wrapper {min-height:100%; height:auto !important; height:100%;}
+
+.page {width:100%; max-width:985px; min-width:320px; margin:0 auto;}
+
+.content-wrap {position:relative;}
+
+.form-col1,
+.form-col2 {max-width:36.25em;}
+.form-col1 {width:50%; float:left; clear:left;}
+.form-col2 {width:50%; float:left;}
+
+.lt-ie8 .form-col2 {width:49.5%;}
+
+
+@mixin core-layout_min751 {
+
+	.sidebar-narrow .content-area {width:100%; float:left;}
+	.sidebar-narrow .content-area-inner {padding:0 2em 0 0;}
+	.sidebar-narrow .sidebar {width:225px; margin-right:-225px; float:right;}
+	.sidebar-narrow .content-wrap {padding:0 225px 0 0;}
+
+	.sidebar-narrow-right .content-area {width:100%; float:right;}
+	.sidebar-narrow-right .content-area-inner {padding:0 0 0 2em;}
+	.sidebar-narrow-right .sidebar {float:left; width:225px; margin-left:-225px;}
+	.sidebar-narrow-right .content-wrap {padding:0 0 0 225px;}
+}
+
+
+@mixin core-layout_min600 {
+
+	.subpods-4 .subpods-2 {float:left; width:100%;}
+	.subpods-4 .subpods-2 .subpod {float:left; width:50%;}
+	.subpods-4 .subpods-2 .subpod-1 .pod {margin:0 0.75em 2em 0;}
+	.subpods-4 .subpods-2 .subpod-2 .pod {margin:0 0 2em 0.75em;}
+	.subpods-4 .subpods-2 .subpod-3 .pod {margin:0 0.75em 0 0;}
+	.subpods-4 .subpods-2 .subpod-4 .pod {margin:0 0 0 0.75em;}
+
+	.lt-ie8 .subpods-4 .subpods-2 .subpod {width:49.5%;}
+}
+
+	
+@mixin core-layout_min1000 {
+	
+	.subpods-4 .subpods-2 {float:left; width:50%;}
+	.subpods-4 .subpods-2 .subpod {float:left; width:50%;}
+	.subpods-4 .subpods-2 .subpod .pod {margin:0 0.75em;}
+	.subpods-4 .subpods-2 .subpod-1 .pod {margin-left:0;}
+	.subpods-4 .subpods-2 .subpod-4 .pod {margin-right:0;}
+
+	.lt-ie8 .subpods-4 .subpods-2 {width:49.5%;}
+}
+

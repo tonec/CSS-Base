@@ -1,14 +1,17 @@
 
-/* ==========================================================================
-   Variables
-   ========================================================================== */
+// ==========================================================================
+// Variables
+// ==========================================================================
 
 $red: #e72639;
 
+$museo-sans: "museo-sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+$helvetica: "Helvetica Neue",Helvetica,Arial,sans-serif;
 
-/* ==========================================================================
-   Mixins
-   ========================================================================== */
+
+// ==========================================================================
+// Mixins
+// ==========================================================================
 
 
 @mixin linear-gradient( $color1, $color2 ) {
@@ -19,37 +22,3 @@ $red: #e72639;
    background-image:     -ms-linear-gradient(top, $color1, $color2);
    background-image:      -o-linear-gradient(top, $color1, $color2);
 }
-
-
-/* ==========================================================================
-   Helpers
-   ========================================================================== */
-
-.clearfix:after {
-    visibility:hidden;
-    display:block;
-    font-size:0;
-    content:" ";
-    clear:both;
-    height:0;
-}
-* html .clearfix             {zoom:1;} /* IE6 */
-*:first-child+html .clearfix {zoom:1;} /* IE7 */
-
-.clear { display:block; clear:both }
-
-.hide-text {
-    border:0;
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-    background-color: transparent;
-}
-
-.hide-block {display:none !important;}
-
-.mobile-only {display:block !important; visibility:visible !important;}
-.full-only {display:none !important; visibility:hidden !important;}
-
-.left {float:left;}
-.right {float:right;}
