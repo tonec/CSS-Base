@@ -1,6 +1,9 @@
 
-/* PAGE - Fundraiser Landing */
-.page-fundraiser-landing .article {margin:1.5em; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+/* ==========================================================================
+   PAGE - Fundraiser Landing - /registration
+   ========================================================================== */
+
+.page-fundraiser-landing .article {margin:1.5em; @include border-radius(4px);}
 .page-fundraiser-landing .article .img {width:100%; height:70px; margin:0 auto; background:transparent url(../images/content/registration/landing/noses_mobile.png) no-repeat 50% 0; position:absolute; left:0;}
 .page-fundraiser-landing .article .img {display:none;}
 
@@ -22,6 +25,49 @@
 #editable-inline-bodyhtml a span.minus-sign { background:transparent url(../images/ui/low/icon_red_minus.gif) no-repeat 50% }
 
 
-/* PAGE - Fundraiser Landing - IE8 and below */
+/* IE8 and below */
 .lt-ie9 .page-fundraiser-landing .pod-age .form-field {width:33.5em}
 .lt-ie8 .page-fundraiser-landing .pod-age .form-field p {width:49.5%;}
+
+
+
+@mixin page-registration_min451 {
+
+	/* PAGE - Fundraiser Landing */
+	.main-site-nav .main-inner {padding-top:2em;}
+	.page-fundraiser-landing .articles-area {background-color:#c8c8c8; padding-bottom:4px; margin-bottom:2em; border:1px solid #c8c8c8; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px;}
+	.page-fundraiser-landing .articles-area-inner {background-color:#fff; -webkit-border-radius:4px; -moz-border-radius:4px; border-radius:4px; position:relative;}
+
+	.page-fundraiser-landing .intro h1,
+	.page-fundraiser-landing .intro p {text-align:center;}
+	.page-fundraiser-landing .intro p {max-width:66em; margin:0 auto 1.5em;}
+	.page-fundraiser-landing h2 {text-align:center;}
+
+	.page-fundraiser-landing .pod-age .form-field {width:33em; margin-bottom:0.5em;}
+	.page-fundraiser-landing .pod-age h2 {margin-bottom:0.7em;}
+	.page-fundraiser-landing .pod-age {text-align:center;}
+	.page-fundraiser-landing .pod-age .form-field p {float:left; width:50%; padding:0;}
+	.page-fundraiser-landing .pod-age .form-field p:first-child {border-right:1px solid #c8c8c8; border-bottom:0;}
+
+	.page-fundraiser-landing .article {float:left; width:33.333%; text-align:center; padding:0; margin:0; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+	.page-fundraiser-landing.adult .article {width:33.333%;}
+	.page-fundraiser-landing.child .article {width:50%;}
+
+	.page-fundraiser-landing .article .article-inner {padding:2em 2em 0; border-left:1px dotted #c8c8c8; position:relative; -webkit-border-radius:0; -moz-border-radius:0; border-radius:0;}
+	.page-fundraiser-landing .article-1 .article-inner {border:0;}
+	.page-fundraiser-landing .articles-area h2 {font-size:2.4em;}
+	.page-fundraiser-landing .articles-area .article h2 {font-size:2.6em;}
+
+	.page-fundraiser-landing .articles-area .article .img {display:block; position:absolute; width:100%; height:85px; bottom:30px; left:0; background:transparent url(../images/content/registration/landing/noses_4.png) no-repeat 50% 0;}
+
+	.page-fundraiser-landing .articles-area .article-1 .img {background-position:50% 0;}
+	.page-fundraiser-landing .articles-area .article-2 .img {background-position:50% -86px;}
+	.page-fundraiser-landing .articles-area .article-3 .img {background-position:50% -174px;}
+
+	.page-fundraiser-landing .article.pod {background:none; border:0; border-top:1px solid #c8c8c8;}
+
+
+	.lt-ie8 .page-fundraiser-landing .article {width:33%;}
+	.lt-ie8 .page-fundraiser-landing.adult .article {width:33%;}
+	.lt-ie8 .page-fundraiser-landing.child .article {width:49%;}
+}

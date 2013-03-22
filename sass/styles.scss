@@ -2,24 +2,8 @@
 /* ==========================================================================
    Mobile, Tablet & Desktop
    ========================================================================== */
-
-@import "compass/reset";
-
-@import "partials/_base";
-@import "partials/_core-layout";
-@import "partials/_core-typography";
-@import "partials/_core-page";
-
-@import "partials/_ui-navigation";
-@import "partials/_ui-section";
-@import "partials/_ui-gradient";
-@import "partials/_ui-button";
-@import "partials/_ui-form";
-@import "partials/_ui-table";
-@import "partials/_ui-progress-bar";
-@import "partials/_ui-tabs";
-
-@import "partials/_page-registration";
+   
+@import "partials/_all";
 
 /* ==========================================================================
    Tablet & Desktop
@@ -28,6 +12,7 @@
 @media only screen and (min-width:481px) {
 
 	@include core_typography_min481;
+   @include page-registration_min451;
 
 }
 
@@ -56,3 +41,7 @@
 	@include core-layout_min1000;
 
 }
+
+/* ==========================================================================
+   Desktop
+   ========================================================================== */
