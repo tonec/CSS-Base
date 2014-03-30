@@ -1,6 +1,9 @@
-* {
-    background-color: transparent;
-}
+
+// ==========================================================================
+// Print
+// ==========================================================================
+
+* { background-color: transparent; }
 .sidebar,
 #navigation,
 #header-region,
@@ -9,28 +12,16 @@
 .breadcrumb,
 .tabs,
 .feed-icon,
-.links {
-    display: none;
-}
-#page {
-    width: 100%;
-}
+.links { display: none; }
+#page { width: 100%; }
 #content,
 #content #content-inner,
 .content,
-.title {
-    margin: 20px 0;
-    width: auto;
-}
+.title { margin: 20px 0; width: auto; }
 a:hover,
 a:active,
 a:link,
-a:visited {
-    color: black;
-}
+a:visited { color: black; }
 #content a:link:after,
-#content a:visited:after {
-    content: " (" attr(href) ") ";
-    font-size: 0.8em;
-    font-weight: normal;
-}
+#content a:visited:after { content: " (" attr(href) ") "; font-size: 0.8em; font-weight: normal; }
+
