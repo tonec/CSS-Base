@@ -20,16 +20,3 @@
 .pointer.btn { font-weight: normal; padding: 0 20px 0 28px; }
 .pointer.btn span { background-position: -402px -40px; }
 .pointer.btn:hover span { background-position: -401px -40px; }
-
-
-p.pointer { font-size: 13px; }
-p.pointer a { color: #333; } 
-.pointer--grey,
-p.pointer a { color: #666; }
-h3.pointer { font-size: 21px; }
-
-@mixin ui-pointer-min481 {
-
-	p.pointer { font-size: 14px; }
-	h3.pointer { font-size: 28px; }
-}
