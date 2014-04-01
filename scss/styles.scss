@@ -1,7 +1,7 @@
 
 /* ==========================================================================
 	 Mobile First
-	 ========================================================================== */
+========================================================================== */
 	 
 @import "__all";
 
@@ -15,12 +15,7 @@
 	@include ui-pod-min481;
 	@include ui-icon-min481;
 	@include ui-pointer-min481;
-	@include ui-tabs-min481;
-	@include ui-form-min481;
-	@include ui-table-min481;
-	@include ui-basket-min481;
 	@include ui-progress-bar-min481;
-	@include ui-search-box-min481;
 }
 
 @media all and (min-width: 768px) {
@@ -35,16 +30,10 @@
 
 	@include ui-tabs-min769;
 	@include ui-table-min769;
-	@include ui-basket-min769;
 }
 
 
 // Incidental breakpoints
-
-@media all and (min-width: 950px) {
-
-	@include core-layout-min950;
-}
 
 @media all and (min-width: 630px) and (max-width: 768px) {
 	
