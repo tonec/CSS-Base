@@ -17,20 +17,9 @@
 }
 .pointer:hover span { background-position: -413px -42px }
 
-.pointer.button { font-weight: normal; padding: 0 20px 0 28px; }
-.pointer.button span { background-position: -402px -40px; }
-.pointer.button--cycle span { background-position: -390px -40px; }
-
-.pointer.button:hover span { background-position: -401px -40px; }
-.pointer.button--cycle:hover span { background-position: -389px -40px; }
-
-.event-type-run .pointer span { background-position: -366px -42px; }
-.event-type-cycle .pointer span { background-position: -390px -42px; }
-.event-type-swim .pointer span { background-position: -378px -42px; }
-
-.event-type-run .pointer:hover span { background-position: -365px -42px; }
-.event-type-cycle .pointer:hover span { background-position: -389px -42px; }
-.event-type-swim .pointer:hover span { background-position: -377px -42px; }
+.pointer.btn { font-weight: normal; padding: 0 20px 0 28px; }
+.pointer.btn span { background-position: -402px -40px; }
+.pointer.btn:hover span { background-position: -401px -40px; }
 
 
 p.pointer { font-size: 13px; }

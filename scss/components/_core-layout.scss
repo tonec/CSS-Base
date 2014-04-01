@@ -74,16 +74,6 @@ form .content > .layout-wrap > .main-content > .inner { padding: 0; }
 	.sub-content.three section .inner-wrap { margin: 0 8px; }
 	.sub-content.three .sub-1 .inner-wrap { margin-left: 0; }
 	.sub-content.three .sub-3 .inner-wrap { margin-right: 0; }
-
-	/* Sidebar Giving Page */
-	.page-giving-page .main-content.aside aside {
-		float: right;
-		margin-right: -320px;
-	}
-
-	.page-giving-page .main-content.aside .primary { float: left; width: 100%; }
-	.page-giving-page .main-content.aside-outside { padding-right: 285px }
-	.page-giving-page .main-content.aside-outside aside { margin-left: 15px; margin-right: -285px; width: 270px; padding: 0; }
 }
 
 @mixin core-layout-min769 {
@@ -108,13 +98,4 @@ form .content > .layout-wrap > .main-content > .inner { padding: 0; }
 	}
 
 	.main-content.aside-outside aside { margin-left: 20px; margin-right: -300px; width: 280px; padding: 0; }
-}
-
-
-@mixin core-layout-min950 {
-				
-	.pod.two { float: left; width: 50%; }
-	.pod.two .pod-inner { margin: 0 10px; }
-	.pod.two.first .pod-inner { margin-left: 0; }
-	.pod.two.last .pod-inner { margin-right: 0; }
 }

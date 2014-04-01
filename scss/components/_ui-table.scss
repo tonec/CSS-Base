@@ -32,13 +32,6 @@ table { width: 100%; @include box-sizing( border-box ); }
 .tbl-thick th,
 .tbl-thick .th .cell { font-weight: bold; background-color: transparent; padding: 0; color: #444; }
 
-
-@mixin ui-table-min481 {
-
-
-}
-
-
 @mixin ui-table-min769 {
 
 	// Table - Thick
